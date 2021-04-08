@@ -834,7 +834,10 @@
                         <div class="col-md-6">
                             <div class="section-heading-left">
                                 <span>My Blog</span>
-                                <h2>Tech-TAC-Tow</h2>
+                                <h2>Tech-TAC-Tow
+                                </h2>
+                                <a href="services-detail.html" data-toggle="modal" data-target="#TTTModal">What is
+                                    Tech-Tac-Tow? <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -994,11 +997,11 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <div class="contact-form-wrap">
-                                <form id="contactForm">
+                                <form id="form">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="contact-form-group">
-                                                <input type="text" class="form-control" name="contact_name"
+                                                <input type="text" class="form-control" name="from_name"
                                                     id="contactName" placeholder="Your Name *">
                                                 <div class="form-validate-icons">
                                                     <span></span>
@@ -1007,7 +1010,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="contact-form-group">
-                                                <input type="text" class="form-control" name="contact_phone"
+                                                <input type="text" class="form-control" name="phoneNumber"
                                                     id="contactPhone" placeholder="Phone Exp. 200-255-4444 *">
                                                 <div class="form-validate-icons">
                                                     <span></span>
@@ -1016,7 +1019,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="contact-form-group">
-                                                <input type="text" class="form-control" name="contact_email"
+                                                <input type="text" class="form-control" name="reply_to"
                                                     id="contactEmail" placeholder="Your Email *">
                                                 <div class="form-validate-icons">
                                                     <span></span>
@@ -1025,7 +1028,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="contact-form-group custom-select-wrapper">
-                                                <select name="contact_subject" class="form-control" id="contactSubject">
+                                                <select name="sub" class="form-control" id="contactSubject">
                                                     <option value="Please Select">Please Select</option>
                                                     <option value="Sales">Conversation</option>
                                                     <option value="Services">Services</option>
@@ -1035,9 +1038,8 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="contact-form-group">
-                                                <textarea name="contact_message" id="contactMessage"
-                                                    class="form-control" placeholder="Your Message *" cols="20"
-                                                    rows="8"></textarea>
+                                                <textarea name="message" id="contactMessage" class="form-control"
+                                                    placeholder="Your Message *" cols="20" rows="8"></textarea>
                                                 <div class="form-validate-icons">
                                                     <span></span>
                                                 </div>
@@ -1061,7 +1063,7 @@
                                                 </div>
                                             </div>
                                             <div class="contact-btn-left">
-                                                <button type="submit" id="contactBtn" class="primary-btn">
+                                                <button type="submit" id="button" class="primary-btn">
                                                     <span class="text">Send Message</span>
                                                     <span class="icon"><i class="fa fa-arrow-right"></i></span>
                                                 </button>
@@ -1079,7 +1081,7 @@
             <!--//Google Map Section Start //-->
             <div class="google-map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.14287277404!2d-75.13505228532489!3d39.98291238983391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c817b4cf61af%3A0xd0342d3b67ed863f!2s2148%20N%20Front%20St%2C%20Philadelphia%2C%20PA%2019122!5e0!3m2!1sen!2sus!4v1617826783225!5m2!1sen!2sus"
+                    src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.14287277404!2d-75.13505228532489!3d39.98291238983391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c817b4cf61af%3A0xd0342d3b67ed863f!2s2148%20N%20Front%20St%2C%20Philadelphia%2C%20PA%2019122!5e0!3m2!1sen!2sus!4v1617826783225!5m2!1sen!2sus"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <!--// Google Map Section End //-->
@@ -1352,7 +1354,7 @@
     <!-- Sunset Hills Modal -->
     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <div class="portfolio-wrap">
-            <img src="" img-fluid" alt="">
+            <img src="" img-fluid="" alt="">
             <div class="portfolio-links">
                 <a href="javascript:void();" data-target="#sunsetHillsModal" data-toggle="modal" title="App 1"><i
                         class="bx bx-plus"></i></a>
@@ -1708,6 +1710,48 @@
         </div>
     </div>
     <!-- End Services 6 Modal -->
+
+    <!-- Tech-Tach-Tow Modal -->
+    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+            <img src="" class="img-fluid" alt="">
+            <div class="portfolio-links">
+                <a href="javascript:void();" data-target="#TTTModal" data-toggle="modal" title="App 1"><i
+                        class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- This is the code that makes the modal itself -->
+    <!-- The first div declares the modal -->
+    <!-- The second div defines the modal - vertically centered and large size -->
+    <!-- Blog Modal Section -->
+    <div class="modal fade" id="TTTModal" tabindex="-1" role="dialog" aria-labelledby="TTTModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Tech-Tac-Tow</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://coderfoundry.com" class="img-fluid" />
+                    <p>What is TTT?</p>
+                    <p>Tech- Latest information on programing languages and updates<br>TAC- Technical Assitance Center:
+                        How to articles and tips on programming to make you more efficient. <br> Tow- Pictures of
+                        people's cars being towed. Submit your picture for a chance to be featured.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <a href="https://coderfoundry.com" class="btn btn-primary" target="_blank">Visit
+                           S.O.A.F</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tech-Tac-Tow Modal -->
     <!-- Success Modal Start -->
     <div class="modal fade custom-modal" id="formSuccessModal" tabindex="-1" role="dialog"
         aria-labelledby="formSuccessModalLabel" aria-hidden="true">
@@ -1803,7 +1847,7 @@
             </div>
         </div>
     </div>
-    <!--// #colorOptionsSidebar //-->
+    <// #colorOptionsSidebar //-->
 
     <!--<div id="rtlSidebar">
         <button type="button" id="rtlToggle">RTL</button>
@@ -1842,6 +1886,15 @@
     <script src="js/particles.js"></script>
     <!--// Main Js //-->
     <script src="js/main.js"></script>
+    <!-- Email JS Initializer -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('user_ggShFQ1um7eCX9RTTK0Wl')
+    </script>
+    <!-- SweetAlert JS -->
+    <script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- //Email Js -->
+    <script src="js/site.js"></script>
 </body>
 
 </html>
