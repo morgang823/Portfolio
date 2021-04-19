@@ -2036,7 +2036,12 @@ header[style] {
 /* 11.About                                           
 /* ---------------------------------------------------------------- */
 #about {
-  background-color: #e0e0e0;
+  background: #403b4a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #403b4a, #e7e9bb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #403b4a, #e7e9bb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .about-inner>h6 {
@@ -2334,7 +2339,12 @@ header[style] {
 /* 13.Services                        
 /* ---------------------------------------------------------------- */
 #services {
-  background-color: #e0e0e0;
+  background: #403b4a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #403b4a, #e7e9bb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #403b4a, #e7e9bb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .services-item {
@@ -2908,7 +2918,12 @@ header[style] {
 /* 16.My Skills    
 /* ---------------------------------------------------------------- */
 #skills {
-  background-color: #e0e0e0;
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #abbaab, #ffffff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #abbaab, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .skills-inner>h6 {
   font-weight: 500;
@@ -3126,6 +3141,15 @@ header[style] {
 /* ---------------------------------------------------------------- */
 /* 17.Portfolio   
 /* ---------------------------------------------------------------- */
+#portfolio{
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #abbaab, #ffffff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #abbaab, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .portfolio-filter {
   text-align: right;
   margin-bottom: 50px;
@@ -3649,14 +3673,6 @@ header[style] {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50px;
-  background: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(255, 69, 0, 0.15);
-  box-shadow: 0 10px 30px 0 rgba(255, 69, 0, 0.15);
 }
 
 .blog-item .blog-img {
