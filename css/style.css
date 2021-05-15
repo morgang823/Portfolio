@@ -53,7 +53,7 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #6D7077;
+  color: #000;
 }
 
 body {
@@ -2925,6 +2925,7 @@ header[style] {
   background: linear-gradient(to right, #abbaab, #ffffff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .skills-inner>h6 {
   font-weight: 500;
   font-size: 14px;
@@ -3141,7 +3142,7 @@ header[style] {
 /* ---------------------------------------------------------------- */
 /* 17.Portfolio   
 /* ---------------------------------------------------------------- */
-#portfolio{
+#portfolio {
   background: #abbaab;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #abbaab, #ffffff);
