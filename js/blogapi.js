@@ -1,9 +1,9 @@
   $(function () {
-      fetch('//giannisblog-it.herokuapp.com//GetTopXPosts/3')
+      fetch('//giannisblog-it.herokuapp.com/GetTopXPosts/3')
           .then(response => response.json())
           .then(function (data) {
 
-              let blogUrl = "//giannisblog-it.herokuapp.com//BlogPosts/Details/";
+              let blogUrl = "//giannisblog-it.herokuapp.com/BlogPosts/Details/";
 
               let blogAnchor = $("#blog1 > div.card-body > h3 > a");
               let blogLink = `${blogUrl}${data[0].slug}`;
