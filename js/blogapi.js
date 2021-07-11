@@ -3,7 +3,7 @@
           .then(response => response.json())
           .then(function (data) {
 
-              let blogUrl = "//giannisblog-it.herokuapp.com/BlogPost/Details";
+              let blogUrl = "//giannisblog-it.herokuapp.com/BlogPost/Details/";
 
               let blogAnchor = $("#blog1 > div.card-body > h3 > a");
               let blogLink = `${blogUrl}${data[0].slug}`;
